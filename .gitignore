@@ -1,0 +1,69 @@
+# 🐍 Python compiled files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.so
+*.dll
+
+# 📦 Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# 🧠 Machine Learning models & checkpoints
+*.h5
+*.hdf5
+*.ckpt
+*.tflite
+*.pb
+*.pth
+*.pt
+*.onnx
+model/
+models/
+
+# 📂 Dataset (không nên push nếu lớn)
+dataset/
+data/
+datasets/
+
+# 🧪 Jupyter / Colab
+.ipynb_checkpoints/
+
+# 📜 Logs, cache & temporary files
+logs/
+*.log
+*.tmp
+*.swp
+*.bak
+
+# 📦 Packages
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# 🧰 IDE & editor files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# 📸 Output images, videos, screenshots
+outputs/
+results/
+captures/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.mp4
+*.avi
+
+# 📜 OS-specific files
+.DS_Store
+Thumbs.db

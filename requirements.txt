@@ -1,0 +1,12 @@
+tensorflow==2.15.0
+numpy
+opencv-python
+protobuf
+h5py
+grpcio
+absl-py
+packaging
+requests
+typing_extensions
+matplotlib
+scikit-learn
