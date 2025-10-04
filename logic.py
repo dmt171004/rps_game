@@ -10,14 +10,14 @@ interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
 
-# 📏 In ra kích thước input mà model yêu cầu
-print("📐 Model input details:", input_details)
+# In ra kích thước input mà model yêu cầu
+print("Model input details:", input_details)
 model_input_shape = input_details[0]['shape']  # dạng: [1, H, W, 3]
 
 # Lấy chiều cao và rộng từ model
 IMG_SIZE = (model_input_shape[1], model_input_shape[2])  # tự động lấy từ model
 
-# ⚠️ Class names phải trùng với thư mục dataset
+# Class names phải trùng với thư mục dataset
 CLASSES = ["paper", "rock", "scissors"]
 
 def preprocess(frame):
@@ -44,13 +44,13 @@ def decide_winner(hand1, hand2):
     - scissors thắng paper
     """
     if hand1 == hand2:
-        return "Draw 🤝"
+        return "Draw"
     if (hand1 == "paper" and hand2 == "rock") or \
        (hand1 == "rock" and hand2 == "scissors") or \
        (hand1 == "scissors" and hand2 == "paper"):
-        return "Player 1 wins 🏆"
+        return "Player 1 wins"
     else:
-        return "Player 2 wins 🏆"
+        return "Player 2 wins"
 
 def predict_rps_two_hands(frame_left, frame_right):
     """Dự đoán kết quả giữa 2 tay"""
